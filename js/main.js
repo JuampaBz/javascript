@@ -58,3 +58,5 @@ function primeraPreEntrega() {
             alert("No se reconoce el dia ingresado");
     }
 }
+
+primeraPreEntrega();
