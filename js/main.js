@@ -1,4 +1,4 @@
-alert ("primera pre-entrega");
+alert ("Segunda pre-entrega");
 
 function sumar (a,b) {
     return a+b;
@@ -9,9 +9,9 @@ console.log(resultado);
 
 let nombre = prompt ("Ingrese su nombre");
 let apellido = prompt ("Ingrese su apellido");
-let edad = prompt ("Ingrese su Edad")
+let age = prompt ("Ingrese su Edad")
 alert ("Bienvenido"+ " " + nombre + " " + apellido);
-alert ("Usted tiene"+ " " + edad + " " + "años")
+alert ("Usted tiene"+ " " + age + " " + "años")
 
 alert ("¿Cuanto es 2000 + 23?")
 let resultados = 2000 + 23;
@@ -57,4 +57,46 @@ break;
 default:
     alert("No se reconoce el dia ingresado");
 }
+
+ // Declaración de Array
+let nombres = ["Juan", "Federico", "Laura", "José", "Malena", "Jorge", "Cristian"];
+// Pregunta al Usuario su Nombre
+let buscarNombre = prompt("Ingrese su nombre");
+
+// Buscando nombres dentro del array "nombres"
+let nombreEncontrado = false;
+for (let i = 0; i < nombres.length; i++) {
+    if (nombres[i] === buscarNombre) {
+        nombreEncontrado = true;
+        break;
+    }
+}
+// Resultado de la busqueda
+if (nombreEncontrado) {
+    alert("Nombre encontrado correctamente");
+} else {
+    alert("No se encontró el nombre");
+}
+
+// Objetos
+// Solicitar al usuario que ingrese datos utilizando prompt
+let nombr = prompt("Ingrese su nombre");
+let edad = prompt("Ingrese su edad");
+let direccion = prompt("Ingrese su dirección");
+
+// Crear un objeto con los datos ingresados por el usuario
+let persona = {
+    nombr: nombr,
+    edad: edad,
+    direccion: direccion,
+    saludar: function() {
+        alert (`Hola, mi nombre es ${this.nombr}, tengo ${this.edad} años y vivo en ${this.direccion}.`);
+    }
+};
+
+// Función saludar para mostrar un saludo
+persona.saludar();
+
+
+
 
